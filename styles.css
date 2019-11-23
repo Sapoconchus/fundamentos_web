@@ -38,12 +38,11 @@ main {
 }
 main > .logo {
 	background-image: url("./imgs/Logo_full.jpeg");
-	background-size: cover; /*hacerla más grande en GIMP */
-	min-height: 100px;
-	min-width: 200px;
-	/*flex-basis:2;
-	flex-grow: 0;*/
-	border: 5px solid green;
+	background-size: cover ; /*hacerla más grande en GIMP */
+	min-height: 125px;
+	min-width: 250px;
+	flex: 2 100%;
+	border: 10px solid green;
 	margin-bottom: 1.5rem;
 }
 
