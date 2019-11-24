@@ -7,12 +7,28 @@ html {
 	background-color: #212121;
 }
 h1 {
-	font-family: 'Righteous', cursive;;
+	font-family: 'Righteous', cursive;
 }
+/*
+body > main {
+	display: flex;
+	justify-content: center;
+	border: 10px solid blue;
+}
+
+main > .logo {
+
+}
+main > .logo > a {
+	display: inline-block;
+	border: 10px solid red;
+	image
+}*/
 
 main {
 	color: #CFD8DC;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	/*min-height: 400px;*/
@@ -23,13 +39,14 @@ main {
 main > .logo {
 	background-image: url("./imgs/Logo_full.jpeg");
 	background-size: cover; /*hacerla más grande en GIMP */
-	min-height: 100px;
-	min-width: 200px;
-	flex-basis:0;
-	flex-grow: 1;
+	min-height: 150px;
+	min-width: 350px;
+	/*flex-basis:2;
+	flex-grow: 0;*/
 	border: 5px solid green;
+	margin-bottom: 1.5rem;
 }
 
-header > img {
-
+main > form {
+	display: inline-block;
 }
