@@ -50,3 +50,9 @@ main > .logo {
 main > form {
 	display: inline-block;
 }
+
+main > img {
+	flex-shrink: 3;
+	flex-basis: 1;
+	flex-grow: 1;
+}
