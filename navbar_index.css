@@ -1,0 +1,35 @@
+header {
+	display: flex;
+	background-color: #CFD8DC;
+	border: 5px solid red;
+	max-height: 75px;
+	position: fixed;
+	top:0;
+	width: 100vw;
+}
+
+header > img {
+	max-height: 75px;
+	display: cover;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	border: 5px solid blue;
+}
+
+.navbar li {
+	list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar a {
+	color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
