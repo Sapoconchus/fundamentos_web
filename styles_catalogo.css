@@ -39,20 +39,37 @@ html {
 
 .caratula{
 	display: flex;
+	flex-direction: column-reverse;
 	max-height: 400px;
 	min-width: 400px;
 	border: 5px solid red;
-	overflow: scroll;
 	margin-right: 2rem;
+	border-radius:2px;
+	overflow: hidden;
+	background-image: url("./imgs/camden-fort-pop-up-cinema.jpg"); /*esto lo llevo a un css propio con una imagen cada una*/
 }
 
-.caratula > img {
-	width:100%;
+
+.caratula .ficha {
+	/*height: 50%;*/
+	/*visibility: hidden;*/
+	border: 5px solid green;
+	display:grid;
+	grid-template-columns:
+
+
+}
+
+.ficha h1 {
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 0.3rem;
 }
 
 .caratula .ficha {
-	height: 50%;
+	width:100%;
 }
+
 .flex-container .category-name {
 	margin-left: 20px;
 }
