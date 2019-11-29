@@ -8,6 +8,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between; /* no tengo claro esto */
+	align-content: space-around;
+	padding: 2rem;
 }
 
 .category-grid {
@@ -15,19 +17,23 @@
 	flex-direction: row;
 	/*display: grid;
 	grid-template-columns: 400px;
-	grid-template-rows: 400px;*/
-	min-height: 400px;
+	grid-template-rows: 400px;
+	min-height: 400px;*/
 	border: 5px dotted #CFD8DC;
 	border-radius: 2px;
 	overflow: scroll;
 	padding: 1rem;
 	margin-bottom: 2rem;
+	max-width: 99vw;
+	
 }
 
 .caratula{
 	display: flex;
-	flex-direction: column-reverse;
-	max-height: 400px;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	max-height: 200px;
 	min-width: 400px;
 	border: 5px solid red;
 	margin-right: 2rem;
@@ -36,26 +42,39 @@
 	background-image: url("./imgs/camden-fort-pop-up-cinema.jpg"); /*esto lo llevo a un css propio con una imagen cada una*/
 }
 
+.caratula > a {
+	color: white;
+	text-decoration: none;
+}
+
 
 .caratula .ficha {
 	/*height: 50%;*/
 	/*visibility: hidden;*/
-	border: 5px solid green;
-	display: flex;
-
-
-}
-
-.caratula .ficha {
 	width:100%;
 	display: flex;
 	flex-direction: column;
+	border: 5px solid green;
+	display: flex;
+	transform: translateY(100%);
+	background-color: rgba(10,10,10,0.8);
+	visibility: hidden;
+	cursor: pointer;
+
+}
+
+.caratula:hover .ficha {
+	transform: translateY(0%);
+	/*transition: all ease-in .4s */
+	visibility: visible;
+	
 }
 
 .ficha .info-bits{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+
 }
 .ficha h1 {
 	font-size: 1.5rem;
@@ -63,24 +82,47 @@
 	margin-bottom: 0.3rem;
 }
 
+.ficha p {
+	text-align: center;
+	font-size:0.8rem;
+}
+
 .metraje, .año, .rating {
+	width:2.9rem;
+	height: 2.9rem;
 	border: 1px dotted white;
 	display: inline-block;
-	margin: 0.25rem;
-	padding: 0.5rem;
+	padding-top: 0.6rem;
 	border-radius: 50px;
+	text-align: center;
+	text-justify: center;
+	font-size: 1.1rem;
+	margin: 0.5rem 0.5rem;
+
 }
 
 .awfull {
 	color: red;
 	border: 1px dotted red;
-	border-radius:50px;
+
 }
-.rating .regular {
+.bad {
+	color: rgb(245, 105, 12);
+	border: 1px dotted rgb(245, 105, 12);
+
+}
+.regular {
 	color: orange;
+	border: 1px dotted orange;
+
 }
-.rating .good {
+.good {
+	color: yellowgreen;
+	border: 1px dotted yellowgreen;
+}
+.very-good {
 	color: green;
+	border: 1px dotted green;
 }
 
 .flex-container .category-name {
