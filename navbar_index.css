@@ -8,12 +8,19 @@ header {
 	width: 100vw;
 }
 
-header > img {
+header img {
 	max-height: 75px;
 	display: cover;
 }
 
-.navbar {
+.navbar  {
+	display: flex;
+	/*flex-direction: row-reverse;*/
+	border: 5px solid blue;
+	justify-content: flex-end;
+}
+
+.navbar .categories {
 	display: flex;
 	flex-direction: row;
 	border: 5px solid blue;
@@ -24,6 +31,7 @@ header > img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
 }
 
 .navbar a {

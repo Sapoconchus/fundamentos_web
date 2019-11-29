@@ -1,15 +1,3 @@
-*, *:before, *:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	background-color: #212121;
-	color: white;
-	font-family: 'Righteous', cursive;
-}
-
 .featured {
 	margin-top: 100px;
 	height: 400px;
@@ -20,7 +8,6 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between; /* no tengo claro esto */
-
 }
 
 .category-grid {
@@ -54,20 +41,46 @@ html {
 	/*height: 50%;*/
 	/*visibility: hidden;*/
 	border: 5px solid green;
-	display:grid;
-	grid-template-columns:
+	display: flex;
 
 
 }
 
+.caratula .ficha {
+	width:100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ficha .info-bits{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .ficha h1 {
 	font-size: 1.5rem;
 	text-align: center;
 	margin-bottom: 0.3rem;
 }
 
-.caratula .ficha {
-	width:100%;
+.metraje, .año, .rating {
+	border: 1px dotted white;
+	display: inline-block;
+	margin: 0.25rem;
+	padding: 0.5rem;
+	border-radius: 50px;
+}
+
+.awfull {
+	color: red;
+	border: 1px dotted red;
+	border-radius:50px;
+}
+.rating .regular {
+	color: orange;
+}
+.rating .good {
+	color: green;
 }
 
 .flex-container .category-name {

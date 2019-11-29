@@ -12,8 +12,13 @@
 <body>
 	<main>
 		<header>
-			<img src="./imgs/logo_full.jpeg">
 			<nav class="navbar">
+				<img src="./imgs/logo_full.jpeg">
+				<form action="" class="navbr-search" ></form>
+					<input type="text" name="search" ide="search" placeholder="buscar en el catálogo"></input>
+					<button type="submit"> buscar </button>
+				</form>
+				<button> Favoritos </button>
 				<ul class="categories">
 					<li><a href="#sci-fi"> Sci-fi </a></li>
 					<li><a href="#seres"> seres mitológicos </a></li>
@@ -33,7 +38,7 @@
 		<section class="flex-container">
 
 			<h1 class="category-name"> Sci-Fi </h1>
-ºº
+
 			<section id="sci-fi" class="category-grid">
 				
 				<article class="caratula">
@@ -41,16 +46,11 @@
 						<div class="ficha">
 							<h1 class="ficha-title"> Jesucristo Cazavampiros </h1>
 							<p class="sinopsis"> El juicio final está cada vez más cerca. Jesucristo ha vuelto al mundo para llevar a cabo una última misión: acabar con un ejército de vampiros capaz de resistir la luz del día. </p>	
-							<ul class="info-bits">
-								<li>85'</li>
-								<li>2001</li>
-								<li>4/5</li>
-							</ul>
-							
-							<p class="info">Duración:</p>
-							<p>85'</p>
-							<p class="info">Año:</p>
-							<p>2001</p>	 
+							<div class="info-bits">
+								<div class="metraje">85'</div>
+								<div class="año">2001</div>
+								<div class="rating awfull">2'5</div>
+							</div>
 						</div>
 				</article>
 
