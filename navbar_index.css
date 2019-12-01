@@ -1,60 +1,63 @@
-header {
+.navbar {
 	display: flex;
+	justify-content: space-between;
 	background-color: #212121;
-/*	border: 5px solid red;*/
-	max-height: 70px;
+	border: 5px solid red;
+	max-height: 75px;
 	position: fixed;
 	top:0;
 	width: 100%;
 	z-index: 9999;
+	flex-wrap: wrap;
 }
-
-header img {
-	max-height: 75px;
-	display: cover;
-}
-
-.navbar  {
+.wrapper {
 	display: flex;
-	/*border: 5px solid green;*/
-	justify-content: flex-end;
+	flex-direction: row;
+}
+
+.logo {
+	height: 75px;
+	border: 5px solid gold;
+}
+.logo img {
+height: 100%;
+display: cover;
+}
+
+.search-container  {
+	display: flex;
+	flex-direction: row;
+	border: 5px solid green;
+	justify-content: space-between;
 	/*padding: 5px;*/
-	width: 100%;
+	/*width: 100px;*/
 	/*overflow: hidden;*/
 	align-items: center;
-}
-
-.navbar .navbar-search {
-	display: flex;
-	margin: 5px;
-	padding: 5px;
-	border: 5px solid red;
-	width: 25%;
-	justify-content: flex-end;
-
+	flex-shrink: 2;
 }
 
 
-.navbar input {
+.search-container input {
 border-radius: 50px;
-padding: 2px;
+text-align: center;
 margin: 3px;
 width:100%;
 height: 35px;
-min-width: 125px;
-}
-
-.navbar .search {
-
+min-width: 100px;
+flex-shrink: 2;
 }
 
 .navbar .categories {
 	display: flex;
 	flex-direction: row;
-/*	border: 5px solid blue;*/
+	border: 5px solid blue;
 	align-items: center;
 	justify-content: center;
 	margin: 0 5px;
+}
+
+.categories .favs {
+	color: #CDDC39;
 }
 
 .navbar li {
@@ -62,8 +65,6 @@ min-width: 125px;
     display: flex;
     flex-direction: row;
 	justify-content: flex-end;
-	/*flex-grow: 1;
-	flex-shrink: 1;*/
 
 }
 
@@ -77,14 +78,20 @@ min-width: 125px;
     padding: 1rem;
     display: block;
 }
+.navbar a .favs{
+	color: #CDDC39;
+}
 
 
-.navbar-favs {
-	margin: 2px;
-	width: 5rem;
-	height: 50px;
-	color: black;
-	background-color:#CDDC39;
-	box-shadow: none;
-	border-radius: 5px;
+@media all	and (max-width:1270px){
+	
+	.header {
+		display: flex;
+		background-color: #212121;
+		border: 5px solid gold;
+		max-width: 70px;
+		height: 500px;
+		z-index: 9999;
+	}
+	
 }
