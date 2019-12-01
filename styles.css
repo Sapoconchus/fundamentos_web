@@ -9,3 +9,9 @@ html {
 	color: white;
 	font-family: 'Righteous', cursive;
 }
+
+
+h1, h2, h3, p {
+	font-family: 'Righteous', cursive;
+	color: white;
+}

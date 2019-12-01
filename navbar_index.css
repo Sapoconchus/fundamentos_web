@@ -2,7 +2,7 @@ header {
 	display: flex;
 	background-color: #212121;
 /*	border: 5px solid red;*/
-	max-height: 50px;
+	max-height: 70px;
 	position: fixed;
 	top:0;
 	width: 100%;
@@ -20,14 +20,39 @@ header img {
 	justify-content: flex-end;
 	/*padding: 5px;*/
 	width: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	align-items: center;
+}
+
+.navbar .navbar-search {
+	display: flex;
+	margin: 5px;
+	padding: 5px;
+	border: 5px solid red;
+	width: 25%;
+	justify-content: flex-end;
+
+}
+
+
+.navbar input {
+border-radius: 50px;
+padding: 2px;
+margin: 3px;
+width:100%;
+height: 35px;
+min-width: 125px;
+}
+
+.navbar .search {
+
 }
 
 .navbar .categories {
 	display: flex;
 	flex-direction: row;
 /*	border: 5px solid blue;*/
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 	margin: 0 5px;
 }
@@ -37,9 +62,13 @@ header img {
     display: flex;
     flex-direction: row;
 	justify-content: flex-end;
-	flex-grow: 1;
-	flex-shrink: 1;
+	/*flex-grow: 1;
+	flex-shrink: 1;*/
 
+}
+
+.navbar li :hover {
+	color: gray;
 }
 
 .navbar a {
@@ -49,15 +78,11 @@ header img {
     display: block;
 }
 
-.navbar-search {
-	display: inline-block;
-	margin: 5px;
-	padding: 5px;
-}
 
 .navbar-favs {
 	margin: 2px;
 	width: 5rem;
+	height: 50px;
 	color: black;
 	background-color:#CDDC39;
 	box-shadow: none;

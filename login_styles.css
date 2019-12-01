@@ -1,39 +1,17 @@
-*, *:before, *:after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-html {
-	background-color: #212121;
-}
-h1 {
-	font-family: 'Righteous', cursive;
-}
-
-
 body > main {
 	color: #CFD8DC;
-	/*display: flex;
+}
+
+.login-container {
+	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;*/
-	margin: 5rem;
-	padding: 10vh;
-	background-image: url("./imgs/anticipation-bn.webp");
-	background-repeat: no-repeat;
-	background-size: 100vw;
-	/*background: linear-gradient(to bottom, black);*/
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-width: 320px;
 }
 
-.navbar {
-	position: relative;
-	float: right;
-	margin-right: -100px;
-}
-
-
-main > .logo {
+.login-container .logo-container {
 	/*min-width: 350px;
 	flex-grow:2;
 	width: 40vw;*/
@@ -42,43 +20,41 @@ main > .logo {
 	flex: 0 1 50%;
 }
 
-main > .logo > img {
-	display: block;
-	min-width: 100%;
-	max-width: 100%;
+.logo-container > img {
+	width: 100%;
 }
-
 
 .intro-message{
 	font-size: 1.1rem;
 	flex: 0 1 50%;
-/*	border: 5px solid red;*/
 	max-width: 500px;
 }
 p {
-	font-size: 18px;
 	text-align: justify;
 }
 
 p > span {
+	display: block;
 	color: #CDDC39;
+	text-align: center;
 }
 
 .login-form {
-	border: 2px dotted blue;
-	display: inline-block;
-	max-width: 500px;
-	flex-grow: 2;
 	padding: 1.1rem;
+	width: 40vw;
 }
-main > form {
-	display: block;
+.login-form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
+
 input, label {
-	border: 1px dotted gray;
+/*	border: 1px dotted gray;*/
 	display: block;
 	width: 100%;
 	font-size: 1.20rem;
+	border-radius: 2px;
 }
 input {
 	padding: 0.5rem;
@@ -89,12 +65,67 @@ label {
 button {
  margin-top: 1rem;
  font-size: 1rem;
+ font-weight: 800;
  width: 50%;
  padding: 0.5rem;
- color: black;
- background-color: #CFD8DC;
+ color: #455A64;
+ background-color: #CDDC39;
+ align-self: center;
+}
+
+.problem-logging {
+	padding: 10px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.problem-logging > a {
+	color: #CFD8DC;
+	text-decoration: none;
+	font-size: 0.75rem;
+	margin: 0.5rem;
+}	
+
+@media all and (max-width: 700px) {
+
+.login-form {
+	width: 70vw;
+}
+}
+
+@media all and (max-width:540px) {
+
+		body > main {
+		margin: 1rem;
+	}	
+
+	input, label {
+		font-size: 0.8rem;
+	}
+
+	button {
+ 	margin-top: 1rem;
+ 	font-weight: 600;
+ 	width: 200px;
+	}
+
+	.login-form {
+	width: 90vw;
+}
+	.footer {
+		visibility: hidden;
+	}
 
 }
-.background-gif {
-	width: 100%;
+
+@media all and (max-width:340px) {
+	body > main {
+		margin: 0
+	}	
+	.intro-message{
+	font-size: 1rem;
+	padding: 1rem;
+	}
 }
