@@ -1,0 +1,105 @@
+.goback {
+    display: absolute;
+    clear: both;
+    margin: 10px 10px;
+    left: 10px;
+    width: 350px;
+    height: 50px;
+    color: #CFD8DC;
+    text-shadow: #CDDC39 2px 2px 10px;
+    /*background-color: #CDDC39;*/
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-container {
+    min-width: 500px;
+    max-width: 900px;
+    position: relative;
+    margin-left: 5vh
+}
+
+.movie {
+    width: 100%;
+}
+
+.grid-data {
+    display: grid;
+    grid-template-columns: 150px minmax(300px auto);
+    grid-auto-rows: minmax(50px auto);
+    gap: 1rem 1rem;
+}
+
+.heading {
+    grid-column: 1 / 2;
+    padding: 10px;
+    text-align: right;
+    border-right: 3px dotted #CFD8DC;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #607D8B
+    
+}
+.data {
+    grid-column: 2 / 3;
+    background-color: #607D8B;
+    color: #CFD8DC;
+    border-radius: 20px;
+    padding: 5px;  
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    
+}
+
+.grid-pills {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px; 
+}
+
+.source {
+    background-color: lightcoral;
+}
+.score {
+    background-color: lightskyblue;
+}
+
+
+
+
+/*
+ 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 3rem;
+}
+
+
+    .container {
+      display: grid;
+      grid-template-columns: [grid-start nav-start] 100px
+                             [nav-end main-start] minmax(200px, auto)
+                             [main-end] 100px
+                             [grid-end];
+      gap: 15px;
+      grid-template-areas: "header header header"
+                           " nav    main  aside1"
+                           " nav    main  aside2"
+                           "footer footer footer";
+      justify-content: stretch;
+      align-content: stretch;
+      height: 100vh;
+    }
+*/
