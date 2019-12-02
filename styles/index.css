@@ -6,6 +6,7 @@ main {
 	border: 3px solid gold;
 	display: grid;
 	grid-template-columns: minmax(300px, auto) 150px;
+	grid-auto-rows: 150px;
 	gap: 15px;
 	/*width: 50vw;
 	margin-right: 25vw;*/
