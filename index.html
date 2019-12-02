@@ -14,6 +14,20 @@
 </head>
 
 <body>
+	<!--
+		main no puede ser el contenedor principal, si lo piensas un poco.
+		Fíjate que dentro estás poniendo cosas como la barra de navegación (nav)
+		que no es parte del contenido principal de la página.
+
+		Pensando en HTML semántico, tendrías que pensar, tal como lo tienes,
+		en tres bloques header, main y footer. Tu header contendría el gif de la intro
+		y el nav. El main las secciones, como tienes, y el footer, debajo del main.
+
+		Tal vez estés utilizando demasiados niveles anidados y podrías simplificar 
+		un poco. Por ejemplo, podrías utilizar <nav class="navbar"> y eliminar el
+		div que tienes justo debajo. (Esto es solo una sugerencia)
+
+	-->
 	<main>
 		<div class="grid-container">
 			<div class="intro-gif">
