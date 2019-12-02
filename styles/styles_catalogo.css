@@ -38,6 +38,11 @@
 	padding: 2rem;
 }
 
+.category-name {
+	padding-top: 100px;
+	text-align: bottom;
+}
+
 .category-grid {
 	display: flex;
 	flex-direction: row;
@@ -49,7 +54,7 @@
 	border-radius: 2px;
 	overflow: scroll;
 	padding: 1rem;
-	margin-bottom: 2rem;
+	margin-bottom: 20px;
 	max-width: 99vw;
 	background-color: #141414;
 	
@@ -88,7 +93,7 @@
 }
 
 .caratula:hover .ficha {
-	transform: translateY(-110%);
+	transform: translateY(-100%);
 	/*transition: all ease-in .4s */
 	visibility: visible;
 	z-index: 999;

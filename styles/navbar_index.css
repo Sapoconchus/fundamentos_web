@@ -83,21 +83,25 @@ flex-shrink: 2;
 }
 
 
-@media all and (max-width:1200px){
+@media all and (max-width:1050px){
  /* meter burger icon */	
 	.navbar .categories {
-	flex-direction: column;
-	border: 5px solid blue;
-	background-color: black;
+		flex-direction: column;
+		border: 5px solid blue;
+		background-color: black;
 	}
 
 	.search-container  {
-	max-height: 75px;
+		max-height: 75px;
+	}
+
+	.footer .social {
+		visibility: hidden;
 	}
 
 }
 
-@media all and (max-width:550px){
+@media all and (max-width:565px){
 	
 	.navbar .categories {
 	visibility: hidden;
