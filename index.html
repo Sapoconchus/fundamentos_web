@@ -15,6 +15,15 @@
 </head>
 
 <body>
+
+	<header>
+		<div class="intro-gif">
+				<img src="./imgs/ezgif-4-fb9ee06ab108.webp" alt="">
+				<i class= "go-down"></i>
+		</div>
+
+	</header>
+
 	<!--
 		main no puede ser el contenedor principal, si lo piensas un poco.
 		Fíjate que dentro estás poniendo cosas como la barra de navegación (nav)
@@ -29,22 +38,28 @@
 		div que tienes justo debajo. (Esto es solo una sugerencia)
 
 	-->
-	<main>
-		<div class="grid-container">
-			<div class="intro-gif">
-				<img src="./imgs/ezgif-4-fb9ee06ab108.webp" alt="">
-			</div>
-			<nav>
-				<div class="navbar">
+	<nav class="sidenav">
+		<div class="sidenav-container">
 					<div class="logo">
-						<img src="./imgs/Logo_full.jpeg" alt="logo FlickFlix">
+						<img src="./imgs/Logo_full.png" alt="logo FlickFlix">
 					</div>
 					<div class="login"> Login </div>
 					<div class="register"> Register </div>
-				</div>
-			</nav>
-			<div class="section-container">
-				<section class="flex-container">
+					<div class="navbar">
+						<ul class="navigation">
+							<a href="#que"><li> ¿Qué es Frickflix?</li></a>
+							<a href="#como"><li> Cómo funciona</li></a>
+							<a href="#cuanto"><li> ¿Cuánto cuesta?</li></a>
+							<a href="#underground"><li> Cine underground </li></a>
+						</ul>
+
+					</div>
+	</nav>
+
+	<main>
+		<div class="grid-container">
+
+				<section id="que" class="flex-container">
 					<h1 class="section-header"> ¿Qué es FricFlix? </h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, recusandae necessitatibus.
 						Voluptatibus expedita magnam praesentium tenetur quo possimus error enim ullam dolorum
@@ -54,7 +69,7 @@
 					</div>	
 				</section>
 
-				<section class="flex-container">
+				<section id="como" class="flex-container">
 					<h1 class="section-header"> ¿Cómo funciona FricFlix? </h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, recusandae necessitatibus.
 						Voluptatibus expedita magnam praesentium tenetur quo possimus error enim ullam dolorum
@@ -64,7 +79,7 @@
 					</div>	
 				</section>
 
-				<section class="flex-container">
+				<section id="cuanto" class="flex-container">
 					<h1 class="section-header"> ¿Cuánto cuesta? </h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, recusandae necessitatibus.
 						Voluptatibus expedita magnam praesentium tenetur quo possimus error enim ullam dolorum
@@ -74,7 +89,7 @@
 					</div>	
 				</section>
 
-				<section class="flex-container">
+				<section id="underground" class="flex-container">
 					<h1 class="section-header"> ¿Cine Underground?</h1>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, recusandae necessitatibus.
 						Voluptatibus expedita magnam praesentium tenetur quo possimus error enim ullam dolorum
@@ -83,10 +98,11 @@
 						<img src="" alt="">
 					</div>	
 				</section>
-				
-			</div>
-			
-			<footer class="footer">
+
+		</div>
+
+	</main>			
+	<footer class="footer">
 					<div class="links">
 							<ul class="info-list">
 								<a href=""><li>empleos</li> </a>
@@ -129,9 +145,9 @@
 							</ul>
 							<p class="disclaimer"> <i class="icon-copyright"></i> copyright fricflix, SLU</p>
 					</div>
-			</footer>
-		</div>
-	</main>
+	</footer>
+
+
 
 </body>
 
