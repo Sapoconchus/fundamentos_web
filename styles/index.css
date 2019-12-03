@@ -38,22 +38,23 @@ main {
    es situar el nav, pero estás usando .navbar, que es
    el div que hay *dentro* del nav, así que agrego yo
    el nav para que veas la diferencia */
-.navbar {
+
+/*.navbar {
 	background-color: #757575;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border: 5px solid blue;
-	/*height: 100vh;*/
 	grid-column: 2 / 3;
 	grid-row: span 2;
-}
+}*/
 
 /* Agrego aquí */
 nav {
 	grid-column: 2 / 3;
 	grid-row: span 2;
 	background-color: lightgreen;
+	display:fixed;
 }
 
 .navbar.logo {
