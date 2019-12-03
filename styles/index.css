@@ -1,3 +1,7 @@
+body main {
+	min-width: 360px;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
@@ -5,7 +9,7 @@ header {
 }
 
 .intro-gif {
-	width: 90vw;
+	width: 100vw;
 }
 
 .intro-gif img {
@@ -14,14 +18,18 @@ header {
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 20vw; /* Set the width of the sidebar */
+  min-width: 15vw; /* Set the width of the sidebar */
+  max-width: 15vw;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
+  overflow-y: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-  background-color: #212121;
+  padding-right: 20px;
+ /* background-color: #212121;
+ border: 6px solid blue;*/
 }
 
 .sidenav-container {
@@ -37,19 +45,23 @@ header {
 }
 
 .login, .register {
-	width: 250px;
-	height: 75px;
+	/*max-width: 250px;
+	max-height: 75px;*/
+	min-width: 12vw;
+	/*min-height: 50px;*/
 	background-color: #CDDC39;
 	color: white;
 	text-align: center;
 	line-height: 75px;
 	font-size: 2rem;
 	margin: 7px auto;
+	flex-shrink: 2;
 }
 
 .sidenav-container .register {
 	background-color:#607D8B;
 }
+
 
 .sidenav-container .navigation {
 	list-style-type: none;
@@ -57,16 +69,158 @@ header {
 }
 
 .navigation li {
-	padding: 10px;
+	padding: 0.5rem;
 	font-size: 1.5rem;
 }
 
-.navigation a{
+.sidenav a{
 	text-decoration: none;
 	color: #CFD8DC;
 }
 
-a:hover {
+.navigation a:hover {
 	color: #CDDC39;
 }
 
+.grid-container {
+	margin-right: 15vw;
+	margin-left: 15vw;
+	/*width: 80vw;*/
+/*	border: 6px solid red;*/
+	padding: 15px;
+}
+
+.grid-container .flex-container {
+/*	border: 5px solid green;*/
+	margin: 6rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 2px dotted #CDDC39;
+	padding-bottom: 6rem;
+}
+
+
+.flex-container .section-text{
+	display: flex;
+	flex-direction: column;
+	padding: 0 auto;
+/*	border: 3px solid blue;*/
+}
+
+.section-text h1 {
+	text-align: left;
+	margin-bottom: 2rem;
+	margin-top:5px;
+	font-size: 3rem;
+	text-shadow: #757575 0px 5px 5px;
+	line-height: 1.1;
+}
+
+.section-text p {
+	text-align: left;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.flex-container .section-pic {
+	margin-left: 3rem;
+}
+
+strong {
+	font-weight: normal;
+	color: #CDDC39;
+}
+
+
+@media all and (max-width: 1300px) {
+	.login, .register {
+		min-width: 125px;
+		font-size: 1.5rem;
+		line-height: 50px;
+	}
+	.navigation li {
+		padding: 0.5rem;
+		font-size: 1rem;
+	}
+	.section-text h1 {
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+	
+	.section-text p {
+		text-align: left;
+		font-size: 1.3rem;
+		line-height: 1.5;
+	}
+
+}
+
+@media all and (max-width: 1210px) {
+/*	.login, .register {
+		font-size: 1rem;
+		min-width: 75px;
+	}
+	.navigation li {
+		padding: 0.5rem;
+		font-size: 0.75rem;
+	}
+	.sidenav {
+		min-width: 200px;
+	  }*/
+
+	.grid-container .flex-container {
+		flex-direction: column;
+
+	}
+}
+
+
+@media all and (max-width: 1050px) {
+	.login, .register {
+		font-size: 1rem;
+	}
+
+}
+
+@media all and (max-width: 760px) {
+	.login, .register {
+		font-size: 1rem;
+	}
+	.navigation li {
+		padding: 1.5rem auto;
+		font-size: 1rem;
+	}
+	.sidenav {
+		min-width: 120px;
+	  }
+	  .grid-container {
+		margin-left: 2vw;
+	}
+	.grid-container .flex-container {
+
+			margin: 3rem auto;
+	}
+}
+
+@media all and (max-width: 470px) {
+	.login, .register {
+		font-size: 1rem;
+		min-width: 75px;
+	}
+
+	.sidenav-container .navigation {
+		text-align: right;
+		padding: 5px;
+	}
+	.section-text h1 {
+		font-size: 1.75rem;
+		line-height: 1;
+	}
+	
+	.section-text p {
+		text-align: left;
+		font-size: 0.9rem;
+		line-height: 1.5;
+	}
+}
