@@ -18,3 +18,8 @@ h1, h2, h3, p {
 body {
 	min-width: 320px;
 }
+
+strong {
+	font-weight: normal;
+	color: #CDDC39;
+}

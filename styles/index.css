@@ -100,6 +100,16 @@ header {
 	padding-bottom: 6rem;
 }
 
+.flex-container .section-pic {
+	min-width: 25vw;
+	max-width: 70vw;
+}
+
+.section-pic img {
+	width: 100%;
+	display: cover;
+}
+
 
 .flex-container .section-text{
 	display: flex;
@@ -127,9 +137,8 @@ header {
 	margin-left: 3rem;
 }
 
-strong {
-	font-weight: normal;
-	color: #CDDC39;
+#burger-checkbox {
+    display: none;
 }
 
 
@@ -157,28 +166,30 @@ strong {
 }
 
 @media all and (max-width: 1210px) {
-/*	.login, .register {
-		font-size: 1rem;
-		min-width: 75px;
-	}
-	.navigation li {
-		padding: 0.5rem;
-		font-size: 0.75rem;
-	}
-	.sidenav {
-		min-width: 200px;
-	  }*/
 
 	.grid-container .flex-container {
 		flex-direction: column;
 
 	}
+	.flex-container .section-pic {
+		max-width: 50vw;
+	}
+	.section-text p {
+		margin-bottom: 2rem;
+	}
 }
 
 
 @media all and (max-width: 1050px) {
+	
+	.sidenav {
+		min-width: 120px;
+		top: -20px;	
+	  	right: -10px;
+	  }
+
 	.login, .register {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 
 }
@@ -191,9 +202,7 @@ strong {
 		padding: 1.5rem auto;
 		font-size: 1rem;
 	}
-	.sidenav {
-		min-width: 120px;
-	  }
+
 	  .grid-container {
 		margin-left: 2vw;
 	}
@@ -201,9 +210,56 @@ strong {
 
 			margin: 3rem auto;
 	}
+	.flex-container .section-pic {
+		max-width: 60vw;
+	}
 }
 
-@media all and (max-width: 470px) {
+@media all and (max-width: 600px) {
+	#burger-checkbox {
+        position: absolute;
+        top: 200px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    #burger-checkbox:checked ~ .navigation {
+        display: inherit;
+    }
+
+    .burger-label {
+        position: absolute;
+        top: 200px;
+        right: 25px;
+        width: 10vw;
+        height: 10vh;
+        z-index: 9999;
+        font-size: 40px;
+        border: 2px solid #CDDC39;
+    }
+
+    .burger-label:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: #CDDC39;
+        right: 12px;
+        top: 12px;
+        box-shadow: 0 17px 0 0 #CDDC39,
+                    0 34px 0 0 #CDDC39;
+    }
+
+}
+
+@media all and (max-width: 480px) {
+	.sidenav {
+		top: -20px;
+		right: -20px;
+	}
+
 	.login, .register {
 		font-size: 1rem;
 		min-width: 75px;
@@ -222,5 +278,8 @@ strong {
 		text-align: left;
 		font-size: 0.9rem;
 		line-height: 1.5;
+	}
+	.flex-container .section-pic {
+		max-width: 50vw;
 	}
 }
