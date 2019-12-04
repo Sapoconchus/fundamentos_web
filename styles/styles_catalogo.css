@@ -159,3 +159,18 @@
 .flex-container .category-name {
 	margin-left: 20px;
 }
+
+@media all and (max-width:590) {
+	.featured .featured-container {
+		border: 5px dotted #CDDC39;
+		position: relative;
+		width: 100%
+		min-width: 200px;
+		margin-right: 10%;
+		left:0;
+		right: 200px;
+	/*	animation-name: blink;
+		animation-duration: 5s;
+		animation-fill-mode: forwards;*/
+	}
+}

@@ -16,82 +16,15 @@ header {
 	width: 100%;
 }
 
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  min-width: 15vw; /* Set the width of the sidebar */
-  max-width: 15vw;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  overflow-x: hidden;
-  overflow-y: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  padding-right: 20px;
- /* background-color: #212121;
- border: 6px solid blue;*/
-}
-
-.sidenav-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: center;
-	padding: 10px;
-}
-
-.logo img {
-	width: 100%;
-}
-
-.login, .register {
-	/*max-width: 250px;
-	max-height: 75px;*/
-	min-width: 12vw;
-	/*min-height: 50px;*/
-	background-color: #CDDC39;
-	color: white;
-	text-align: center;
-	line-height: 75px;
-	font-size: 2rem;
-	margin: 7px auto;
-	flex-shrink: 2;
-}
-
-.sidenav-container .register {
-	background-color:#607D8B;
-}
-
-
-.sidenav-container .navigation {
-	list-style-type: none;
-	padding: 15px;
-}
-
-.navigation li {
-	padding: 0.5rem;
-	font-size: 1.5rem;
-}
-
-.sidenav a{
-	text-decoration: none;
-	color: #CFD8DC;
-}
-
-.navigation a:hover {
-	color: #CDDC39;
-}
 
 .grid-container {
 	margin-right: 15vw;
 	margin-left: 15vw;
-	/*width: 80vw;*/
-/*	border: 6px solid red;*/
+
 	padding: 15px;
 }
 
 .grid-container .flex-container {
-/*	border: 5px solid green;*/
 	margin: 6rem auto;
 	display: flex;
 	flex-direction: row;
@@ -115,7 +48,6 @@ header {
 	display: flex;
 	flex-direction: column;
 	padding: 0 auto;
-/*	border: 3px solid blue;*/
 }
 
 .section-text h1 {
@@ -137,21 +69,8 @@ header {
 	margin-left: 3rem;
 }
 
-#burger-checkbox {
-    display: none;
-}
-
-
 @media all and (max-width: 1300px) {
-	.login, .register {
-		min-width: 125px;
-		font-size: 1.5rem;
-		line-height: 50px;
-	}
-	.navigation li {
-		padding: 0.5rem;
-		font-size: 1rem;
-	}
+	
 	.section-text h1 {
 		font-size: 2.5rem;
 		line-height: 1;
@@ -162,7 +81,6 @@ header {
 		font-size: 1.3rem;
 		line-height: 1.5;
 	}
-
 }
 
 @media all and (max-width: 1210px) {
@@ -180,30 +98,9 @@ header {
 }
 
 
-@media all and (max-width: 1050px) {
-	
-	.sidenav {
-		min-width: 120px;
-		top: -20px;	
-	  	right: -10px;
-	  }
-
-	.login, .register {
-		font-size: 1.25rem;
-	}
-
-}
-
 @media all and (max-width: 760px) {
-	.login, .register {
-		font-size: 1rem;
-	}
-	.navigation li {
-		padding: 1.5rem auto;
-		font-size: 1rem;
-	}
-
-	  .grid-container {
+	
+	.grid-container {
 		margin-left: 2vw;
 	}
 	.grid-container .flex-container {
@@ -213,62 +110,27 @@ header {
 	.flex-container .section-pic {
 		max-width: 60vw;
 	}
+	.flex-container .section-text {
+		padding-right: 15px;
+	}
 }
 
-@media all and (max-width: 600px) {
-	#burger-checkbox {
-        position: absolute;
-        top: 200px;
-        right: 10px;
-        width: 50px;
-        height: 50px;
-        margin: 0;
-    }
-
-    #burger-checkbox:checked ~ .navigation {
-        display: inherit;
-    }
-
-    .burger-label {
-        position: absolute;
-        top: 200px;
-        right: 25px;
-        width: 10vw;
-        height: 10vh;
-        z-index: 9999;
-        font-size: 40px;
-        border: 2px solid #CDDC39;
-    }
-
-    .burger-label:before {
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 4px;
-        background-color: #CDDC39;
-        right: 12px;
-        top: 12px;
-        box-shadow: 0 17px 0 0 #CDDC39,
-                    0 34px 0 0 #CDDC39;
-    }
-
+@media all and (max-width: 550px){
+	.section-text h1 {
+		font-size: 2rem;
+		line-height: 1;
+	}
+	
+	.section-text p {
+		text-align: left;
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
 }
+
 
 @media all and (max-width: 480px) {
-	.sidenav {
-		top: -20px;
-		right: -20px;
-	}
 
-	.login, .register {
-		font-size: 1rem;
-		min-width: 75px;
-	}
-
-	.sidenav-container .navigation {
-		text-align: right;
-		padding: 5px;
-	}
 	.section-text h1 {
 		font-size: 1.75rem;
 		line-height: 1;
@@ -278,6 +140,7 @@ header {
 		text-align: left;
 		font-size: 0.9rem;
 		line-height: 1.5;
+		padding-right: 5px;
 	}
 	.flex-container .section-pic {
 		max-width: 50vw;

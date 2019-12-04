@@ -85,7 +85,6 @@ table th {
 
    .footer {
     justify-content: space-between;
-    border: 5px solid gold; 
     }
 
     .footer .social {
@@ -100,7 +99,6 @@ table th {
     text-align: justify;
     list-style-type: none;
     text-transform: capitalize;
-   /* color: white;*/
     }
 
 }

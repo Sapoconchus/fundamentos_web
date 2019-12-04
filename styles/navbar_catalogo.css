@@ -1,0 +1,167 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #212121;
+	max-height: 75px;
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 9999;
+	flex-wrap: wrap;
+	min-width: 320px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.logo {
+	height: 75px;
+}
+.logo img {
+height: 100%;
+display: cover;
+}
+
+.search-container  {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-shrink: 2;
+}
+
+
+.search-container input {
+border-radius: 50px;
+text-align: center;
+margin: 3px;
+width:100%;
+height: 35px;
+min-width: 100px;
+flex-shrink: 2;
+}
+
+.navbar .categories {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5px;
+}
+
+.categories .favs {
+	color: #CDDC39;
+}
+
+.navbar li {
+	list-style-type: none;
+    display: flex;
+    flex-direction: row;
+	justify-content: flex-end;
+}
+
+.navbar li :hover {
+	color: gray;
+}
+
+.navbar a {
+	color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+.navbar a .favs{
+	color: #CDDC39;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+@media all and (max-width:1050px){
+
+	.navbar .categories {
+		display: none;
+		flex-direction: column;
+		margin-top: 65px;
+		background-color: #212121;
+	}
+
+	.search-container  {
+		max-height: 75px;
+	}
+
+	.footer .social {
+		visibility: hidden;
+	}
+
+	 /* meter burger icon */	
+
+	 #burger-checkbox {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+
+    #burger-checkbox:checked ~ .categories {
+        display: inherit;
+    }
+
+    .burger-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75px;
+        height: 65px;
+        z-index: 9999;
+        font-size: 40px;
+        border: 2px solid #CDDC39;
+    }
+
+    .burger-label:before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        background-color: #CDDC39;
+        right: 12px;
+        top: 12px;
+        box-shadow: 0 17px 0 0 #CDDC39,
+                    0 34px 0 0 #CDDC39;
+    }
+
+}
+
+@media all and (max-width:660px){
+
+	.search-container  {
+		max-width: 100px;
+	}
+	
+	.navbar .categories {
+	justify-content: right;
+	margin: 0;
+	}
+	
+}
+
+@media all and (max-width:450px){
+	
+	.logo {
+		display: none;
+	}
+	.search-container  {
+		max-width: 175px;
+	}
+
+	.navbar .categories {
+		display: none;
+		flex-direction: column;
+		margin-top: 65px;
+		background-color: #212121;
+	}
+}
