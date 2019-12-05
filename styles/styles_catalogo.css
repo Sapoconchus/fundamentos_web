@@ -8,13 +8,8 @@
 .featured .featured-container {
 	border: 5px dotted #CDDC39;
 	position: relative;
-	width: 50%;
-	min-width: 400px;
-	margin-right: 50%;
-	left: 25vw;
-/*	animation-name: blink;
-	animation-duration: 5s;
-	animation-fill-mode: forwards;*/
+	left: 20vw;
+	max-width: 60vw;
 }
 
 .featured .featured-film {
@@ -172,5 +167,15 @@
 	/*	animation-name: blink;
 		animation-duration: 5s;
 		animation-fill-mode: forwards;*/
+	}
+}
+
+@media all and (max-width: 1050px) {
+
+	.featured .featured-container {
+	border: 5px dotted #CDDC39;
+	position: relative;
+	left: 10vw;
+	max-width: 80vw;
 	}
 }

@@ -13,11 +13,10 @@
 .movie-container {
     display: flex;
     flex-direction: row;
+    min-width: 45vw;
 }
 
 .video-container {
-    min-width: 500px;
-    max-width: 900px;
     position: relative;
     margin-left: 5vh
 }
