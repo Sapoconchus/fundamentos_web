@@ -79,24 +79,25 @@ flex-shrink: 2;
     display: none;
 }
 
-@media all and (max-width:1050px){
+@media all and (max-width:1125px){
 
-	.navbar .categories {
-		display: none;
+	.navbar .wrapper {
 		flex-direction: column;
-		margin-top: 65px;
+		display: none;
+	}
+	
+	.navbar .categories {
+		flex-direction: column;
+		margin-top: 30px;
 		background-color: #212121;
 	}
 
 	.search-container  {
-		max-height: 75px;
+		position: relative;
+		top: 380px;
+		left: 5px;
+		background-color:#212121;
 	}
-
-	.footer .social {
-		visibility: hidden;
-	}
-
-	 /* meter burger icon */	
 
 	 #burger-checkbox {
         position: absolute;
@@ -107,14 +108,14 @@ flex-shrink: 2;
         margin: 0;
     }
 
-    #burger-checkbox:checked ~ .categories {
+    #burger-checkbox:checked ~ .wrapper {
         display: inherit;
     }
 
     .burger-label {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 5px;
+        right: 5px;
         width: 75px;
         height: 65px;
         z-index: 9999;
@@ -136,37 +137,10 @@ flex-shrink: 2;
 
 }
 
-@media all and (max-width:660px){
+@media all and (max-width:600px){
 
 	.search-container  {
-		max-width: 100px;
-	}
-	
-	.navbar .categories {
-	justify-content: right;
-	margin: 0;
-	}
-	
-}
-
-@media all and (max-width:450px){
-	/*
-	.logo {
-		display: none;
-	}*/
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.search-container  {
-		max-width: 175px;
+		max-width: 150px;
 	}
 
-	.navbar .categories {
-		display: none;
-		flex-direction: column;
-		margin-top: 65px;
-		background-color: #212121;
-	}
 }
