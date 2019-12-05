@@ -150,10 +150,15 @@ flex-shrink: 2;
 }
 
 @media all and (max-width:450px){
-	
+	/*
 	.logo {
 		display: none;
+	}*/
+	.wrapper {
+		display: flex;
+		flex-direction: column;
 	}
+	
 	.search-container  {
 		max-width: 175px;
 	}
