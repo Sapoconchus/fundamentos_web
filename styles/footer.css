@@ -11,6 +11,11 @@
     min-width: 360px;
 }
 
+.footer .contact {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer .contact-data {
     min-width: 200px;
     margin: 5px;
@@ -87,10 +92,6 @@ table th {
     justify-content: space-between;
     }
 
-    .footer .social {
-        display: none;
-    }
-
     .footer .links {
     min-width: 250px;
     }
@@ -126,13 +127,12 @@ table th {
     }
     
     .footer .links {
-        align-self: center;
+        align-self: space-between;
         align-content: center;
+        min-width: 300px;
+    }
     }
 
-    .footer .contact-data {
-        display: none;
-    }
     .footer .social {
         display: flex;
 
