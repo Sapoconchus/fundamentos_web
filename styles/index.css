@@ -197,7 +197,7 @@ header {
 	.flex-container .section-pic {
 		max-width: 50vw;
 	}
-	.icon-down-open {
-	visibility: hidden; /*porque en móviles no hay hover*/
-	}
+/*	.icon-down-open {
+	visibility: hidden; /*porque en móviles no hay hover
+	}*/
 }
