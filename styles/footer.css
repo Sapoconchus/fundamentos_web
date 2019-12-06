@@ -8,7 +8,9 @@
     align-items: flex-end;
     color: #455A64;
     padding-bottom: 10px;
-    min-width: 360px;
+    min-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .footer .contact {
@@ -118,30 +120,25 @@ table th {
     padding: 5px;
     text-align: left;
 }
-
-@media all and (max-width:450px){
- 
     .footer {
     flex-direction: column;
     align-items: center;
     }
+}
+
+@media all and (max-width:450px){
     
     .footer .links {
         align-self: space-between;
         align-content: center;
         min-width: 300px;
     }
-    }
-
-    .footer .social {
-        display: flex;
-
-    }
-
-    .footer {
-    flex-direction: column;
-    justify-content: center;
-
-    }
-
 }
+@media all and (max-width:350px){
+    .footer .links li {
+    font-size: 0.75rem;
+    }
+    .adress {
+        font-size: 0.75rem;
+    }
+ }

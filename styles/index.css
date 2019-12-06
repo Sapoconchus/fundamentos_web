@@ -1,5 +1,5 @@
 main {
-	min-width: 360px;
+	min-width: 320px;
 	text-outline: 0;
 	margin: 0;
 	padding: 0;
@@ -172,6 +172,27 @@ header {
 		font-size: 0.9rem;
 		line-height: 1.5;
 		padding-right: 5px;
+	}
+	.flex-container .section-pic {
+		max-width: 50vw;
+	}
+	.icon-down-open {
+	visibility: hidden; /*porque en móviles no hay hover*/
+	}
+}
+@media all and (max-width: 320px) {
+
+	.section-text h1 {
+		font-size: 1.5rem;
+		line-height: 2rem;
+		padding-right: 35px;
+	}
+	
+	.section-text p {
+		text-align: left;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		padding-right: 55px;
 	}
 	.flex-container .section-pic {
 		max-width: 50vw;
