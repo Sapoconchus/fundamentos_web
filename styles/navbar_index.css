@@ -51,6 +51,8 @@
       padding: 15px;
       display: flex;
       flex-direction: column;
+
+      /* METER QUE SE VEA 15vw SIEMPRE A VER SI MEJORA LA VISUALIZACION EN PANTALLAS > 2000px VW*/
   }
   
   .navigation li {
@@ -139,5 +141,5 @@
     }
     .navigation {
         visibility: hidden;
+    }
 }
-

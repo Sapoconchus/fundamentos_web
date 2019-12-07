@@ -90,10 +90,6 @@ table th {
 
 @media all and (max-width:1050px){
 
-   .footer {
-    justify-content: space-between;
-    }
-
     .footer .links {
     min-width: 250px;
     }
@@ -106,10 +102,11 @@ table th {
 
 }
 
-@media all and (max-width:540px){
+@media all and (max-width:590px){
     
     .footer .links {
-        min-width: 150px;
+        min-width: 350px;
+        margin-bottom: 2rem;
     }
 
     table th,td {
@@ -131,13 +128,15 @@ table th {
     .footer .links {
         align-self: space-between;
         align-content: center;
-        min-width: 300px;
     }
 }
 @media all and (max-width:350px){
-    .footer .links li {
-    font-size: 0.75rem;
+    
+    .footer .links {
+        min-width: 300px;
+        margin-bottom: 2rem;
     }
+
     .adress {
         font-size: 0.75rem;
     }

@@ -1,17 +1,17 @@
 /* Ancho */
 ::-webkit-scrollbar {
-  width: 11px;
+  height: 15px;
 
 }
 ​
 /* Fondo */
 ::-webkit-scrollbar-track {
-  background: #CFD8DC; 
+  background: #212121; 
 }
 ​
 /* Barra desplazamient */
 ::-webkit-scrollbar-thumb {
-  background: white; 
+  background: #CFD8DC;
 }
 ​
 /* Barra de desplazamiento con hover */

@@ -1,8 +1,13 @@
+main {
+	min-width: 320px;
+}
+
 .featured {
 	display: flex;
 	flex-direction: column;
 	margin-top: 100px;
 	width: 100%;
+	min-width: 320px;
 }
 
 .featured .featured-container {
@@ -10,6 +15,7 @@
 	position: relative;
 	left: 20vw;
 	max-width: 60vw;
+	min-width:270px;
 }
 
 .featured .featured-film {
@@ -26,7 +32,7 @@
 .flex-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; /* no tengo claro esto */
+	justify-content: space-between;
 	align-content: space-around;
 	padding: 2rem;
 }
@@ -34,6 +40,7 @@
 .category-name {
 	padding-top: 100px;
 	text-align: bottom;
+	padding-bottom: 1rem;
 }
 
 .category-grid {
@@ -72,9 +79,6 @@
 	width:100%;
 	display: flex;
 	flex-direction: column;
-/*	border: 5px solid green;*/
-	display: flex;
-	/*transform: translateY(100%);*/
 	background-color: rgba(10,10,10,0.8);
 	visibility: visible;
 	cursor: pointer;
@@ -147,25 +151,19 @@
 	margin-left: 20px;
 }
 
-@media all and (max-width:590) {
-	.featured .featured-container {
-		border: 5px dotted #CDDC39;
-		position: relative;
-		width: 100%
-		min-width: 200px;
-		margin-right: 10%;
-		left:0;
-		right: 200px;
-
-	}
-}
-
 @media all and (max-width: 1050px) {
 
 	.featured .featured-container {
-	border: 5px dotted #CDDC39;
-	position: relative;
 	left: 10vw;
 	max-width: 80vw;
 	}
 }
+
+@media all and (max-width:590) {
+		
+	.caratula .ficha {
+		position: relative;
+		bottom: 205px;
+	}
+}
+
