@@ -73,6 +73,16 @@
     display: visible;
 }
 
+@media all and (min-width: 2500px) {
+
+	 .navigation li {
+      padding: 0.5rem;
+      font-size: calc(1.5rem + 1vh);
+  }
+  	 .login, .register {
+      font-size: calc(2rem + 1vh);
+}
+
 @media all and (max-width: 1300px) {
 	.login, .register {
 		min-width: 125px;
@@ -85,7 +95,6 @@
 	}
 
 }
-
 
 @media all and (max-width: 1050px) {
 	

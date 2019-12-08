@@ -82,14 +82,13 @@ header {
 	text-align: left;
 	margin-bottom: 2rem;
 	margin-top:5px;
-	font-size: 3rem;
+	font-size: calc(1.75rem + 3vw);
 	text-shadow: #757575 0px 5px 5px;
-	line-height: 1.1;
 }
 
 .section-text p {
 	text-align: left;
-	font-size: 2rem;
+	font-size: calc(1rem + 1vw);
 	line-height: 1.5;
 }
 
@@ -97,16 +96,20 @@ header {
 	margin-left: 3rem;
 }
 
+.footer {
+	padding-right: 5vw;
+}
+
 @media all and (max-width: 1300px) {
 	
 	.section-text h1 {
-		font-size: 2.5rem;
+	/*	font-size: 2.5rem;*/
 		line-height: 1;
 	}
 	
 	.section-text p {
 		text-align: left;
-		font-size: 1.3rem;
+	/*	font-size: 1.3rem;*/
 		line-height: 1.5;
 	}
 }
@@ -126,6 +129,12 @@ header {
 }
 
 
+@media all and (max-width: 920px) {
+	.footer {
+		padding-right: 10vw;
+	}
+}
+
 @media all and (max-width: 760px) {
 	
 	.grid-container {
@@ -133,7 +142,7 @@ header {
 	}
 	.grid-container .flex-container {
 
-			margin: 3rem auto;
+		margin: 3rem auto;
 	}
 	.flex-container .section-pic {
 		max-width: 60vw;
@@ -144,18 +153,22 @@ header {
 	.icon-down-open {
 	font-size: 2.5rem;
 	}
+		.footer {
+		padding-right: 15vw;
+	}
+}
 
 }
 
 @media all and (max-width: 550px){
 	.section-text h1 {
-		font-size: 2rem;
+	/*	font-size: 2rem;*/
 		line-height: 1;
 	}
 	
 	.section-text p {
 		text-align: left;
-		font-size: 1.1rem;
+	/*	font-size: 1.1rem;*/
 		line-height: 1.5;
 	}
 	.icon-down-open {
@@ -167,13 +180,13 @@ header {
 @media all and (max-width: 480px) {
 
 	.section-text h1 {
-		font-size: 1.75rem;
+	 	font-size: 2rem;
 		line-height: 1;
 	}
 	
 	.section-text p {
 		text-align: left;
-		font-size: 0.9rem;
+	/*	font-size: 0.9rem;*/
 		line-height: 1.5;
 		padding-right: 5px;
 	}
@@ -183,8 +196,12 @@ header {
 	.icon-down-open {
 	visibility: hidden; /*porque en móviles no hay hover*/
 	}
+	.footer {
+		padding-right: 0;
+	}
 }
-@media all and (max-width: 320px) {
+}
+@media all and (max-width: 321px) {
 
 	.section-text h1 {
 		font-size: 1.5rem;
@@ -194,7 +211,7 @@ header {
 	
 	.section-text p {
 		text-align: left;
-		font-size: 0.9rem;
+	/*	font-size: 0.9rem;*/
 		line-height: 1.5;
 		padding-right: 55px;
 	}

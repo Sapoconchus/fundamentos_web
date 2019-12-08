@@ -2,11 +2,16 @@
     display: absolute;
     clear: both;
     margin: 10px 10px;
-    left: 10px;
+    left: 3rem;
     width: 350px;
     height: 50px;
     color: #CFD8DC;
     text-shadow: #CDDC39 2px 2px 10px;
+    font-size: calc(1rem + 1vw)
+}
+.goback a:hover p {
+    color: #CDDC39;
+    text-shadow: #CFD8DC 2px 2px 10px;
 }
 
 .movie-container {
@@ -44,7 +49,7 @@
     justify-content: right;
     align-items: center;
     color: #607D8B;
-    font-size: 2rem;
+    font-size: calc(1rem + 1vw);
     
 }
 .data {
@@ -55,7 +60,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: calc(1rem + 0.5vw);
 }
 
 .info-container {
@@ -72,7 +77,7 @@
 
 h1 {
     color: #CDDC39;
-    font-size: 4rem;
+    font-size: calc(2rem + 2vw);
 }
 
 .grid-pills {
@@ -80,11 +85,11 @@ h1 {
     display: grid;
     grid-template-columns: minmax(25%, auto) 20% 15% 10% 15%;
     grid-template-rows: 50px;
-    padding: 25px;
+    padding: 10px;
     gap: 5px;
     align-items: flex-end;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: calc(0.5rem + 1vw);
 }
 
 .source {
@@ -106,17 +111,21 @@ a:hover {
     color: white;
 }
 
+.category-name  h1 {
+    font-size: 2rem;
+}
 
+/*
 @media all and (min-width: 1500px) {
-    .movie-container {
+   .movie-container {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    .grid-data {
+     .grid-data {
         max-width: 40vw;
     }
-    .heading {
+     .heading {
         font-size: 1.5rem;
     }
     .data {
@@ -131,9 +140,9 @@ a:hover {
     .goback {
         font-size: 2rem;
     }
-}
+}*/
 
-/*
+/*  FUERA
 @media all and (max-width:950px) {
 
     .movie-container {
@@ -154,7 +163,7 @@ a:hover {
     }
 
 }*/
-
+/*
 @media all and (max-width:700px) {
 
     h1 {
@@ -171,24 +180,23 @@ a:hover {
         font-size: 1rem;
     }
 
-}
+}*/
 
 @media all and (max-width: 420px) {
     
     .grid-pills {
         padding: 0;
         font-size: 0.75rem;
+        margin-bottom: 10px;
     }
 
     .grid-data {
         display: flex;
         flex-direction: column;
     }
+
     .heading {
-
         border-right: none;
-
-        
     }
 
 }
