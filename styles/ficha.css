@@ -197,6 +197,7 @@ a:hover {
     .grid-data {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .heading {

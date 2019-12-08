@@ -48,7 +48,6 @@ table th {
     justify-content: flex-end;
     align-items: center;
     padding: 5px;
-
 }
 
 .footer .social-list {
@@ -80,7 +79,6 @@ table th {
     text-align: center;
     list-style-type: none;
     text-transform: capitalize;
-   /* color: white;*/
 }
 
 .footer p {

@@ -30,9 +30,6 @@ header {
 .uncover, .icon-down-open:hover ~ .cover {
   display: none;
 }
-.icon-down-open:hover {
-	visibility: hidden;
-}
 
 .icon-down-open {
 	position: absolute;
@@ -102,13 +99,11 @@ header {
 @media all and (max-width: 1300px) {
 	
 	.section-text h1 {
-	/*	font-size: 2.5rem;*/
 		line-height: 1;
 	}
 	
 	.section-text p {
 		text-align: left;
-	/*	font-size: 1.3rem;*/
 		line-height: 1.5;
 	}
 }
@@ -160,7 +155,6 @@ header {
 
 @media all and (max-width: 550px){
 	.section-text h1 {
-	/*	font-size: 2rem;*/
 		line-height: 1;
 	}
 
@@ -170,7 +164,6 @@ header {
 	
 	.section-text p {
 		text-align: left;
-	/*	font-size: 1.1rem;*/
 		line-height: 1.5;
 	}
 	.icon-down-open {
@@ -188,13 +181,11 @@ header {
 	
 	.section-text p {
 		text-align: left;
-	/*	font-size: 0.9rem;*/
 		line-height: 1.5;
 		padding-right: 5px;
 	}
 	.flex-container .section-pic {
 		max-width: 60vw;
-		border: 2px solid red;
 		margin-left: 0;
 		padding-left: 0;
 	}
@@ -223,7 +214,4 @@ header {
 		line-height: 1.5;
 		padding-right: 5px;
 	}
-/*	.flex-container .section-pic {
-		max-width: 50vw;
-	}*/
 }

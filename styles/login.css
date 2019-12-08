@@ -48,7 +48,6 @@ p > strong {
 }
 
 input, label {
-/*	border: 1px dotted gray;*/
 	display: block;
 	width: 100%;
 	font-size: 1.20rem;
@@ -71,12 +70,17 @@ button {
  align-self: center;
 }
 
+button:hover {
+	background-color: #455A64;
+	color: #CDDC39;
+	cursor: pointer;
+}
+
 .problem-logging {
 	padding: 10px;
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-
 }
 
 
@@ -89,14 +93,14 @@ button {
 
 @media all and (max-width: 700px) {
 
-.login-form {
-	width: 70vw;
-}
+	.login-form {
+		width: 70vw;
+	}
 }
 
 @media all and (max-width:540px) {
 
-		body > main {
+	body > main {
 		margin: 1rem;
 	}	
 

@@ -44,15 +44,12 @@
   .sidenav-container .register {
       background-color:#607D8B;
   }
-  
 
   .sidenav-container .navigation {
       list-style-type: none;
       padding: 15px;
       display: flex;
       flex-direction: column;
-
-      /* METER QUE SE VEA 15vw SIEMPRE A VER SI MEJORA LA VISUALIZACION EN PANTALLAS > 2000px VW*/
   }
   
   .navigation li {
@@ -68,16 +65,6 @@
   .navigation a:hover {
       color: #CDDC39;
   }
-/*
-@media all and (min-width: 2500px) {
-
-	 .navigation li {
-      padding: 0.5rem;
-     font-size: calc(1.5rem + 1vh);
-  }
-  	 .login, .register {
-     font-size: calc(2rem + 1vh);
-}*/
 
 @media all and (max-width: 1300px) {
 
