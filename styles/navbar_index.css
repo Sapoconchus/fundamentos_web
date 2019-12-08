@@ -60,7 +60,7 @@
       font-size: 1.5rem;
   }
   
-  .sidenav a{
+  .sidenav a {
       text-decoration: none;
       color: #CFD8DC;
   }
@@ -68,22 +68,19 @@
   .navigation a:hover {
       color: #CDDC39;
   }
-
-  #burger-checkbox {
-    display: visible;
-}
-
+/*
 @media all and (min-width: 2500px) {
 
 	 .navigation li {
       padding: 0.5rem;
-      font-size: calc(1.5rem + 1vh);
+     font-size: calc(1.5rem + 1vh);
   }
   	 .login, .register {
-      font-size: calc(2rem + 1vh);
-}
+     font-size: calc(2rem + 1vh);
+}*/
 
 @media all and (max-width: 1300px) {
+
 	.login, .register {
 		min-width: 125px;
 		font-size: 1.5rem;
@@ -105,8 +102,8 @@
 	  }
 
 	.login, .register {
-        font-size: 1.25rem;
-        min-width: 110px;
+        font-size: 1rem;
+        min-width: 100px;
 	}
 
 }
